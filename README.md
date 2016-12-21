@@ -1,106 +1,91 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Talk Template
+# Computer Science
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
+[Computer science](https://en.wikipedia.org/wiki/Computer_science) as an area of
+study comprises everything necessary for the design, construction, and use of
+computers.
 
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+We'll focus on one area of theoretical computer science, algorithms and data
+structures, and  begin with abstract data types.
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+-   Familiarity with a high-level programming language implementing dynamic
+    arrays.
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+-   Define abstract data type (ADT).
+-   Create stacks and queues from dynamic arrays.
 
 ## Preparation
 
-1.  Fork and clone this repository.
- [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+1.  None.
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## Abstract data type (ADT)
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+An [ADT](https://en.wikipedia.org/wiki/Abstract_data_type) is a type defined by
+what it does, rather than how it is implemented.  Specific implementations have
+limitations not found in the ADT and must be able to create instances of the
+type.
 
-## Leading Topic Heading
+## Discussion: Stack
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+Stack operations:
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+-   `empty?` - check to see if there are any items on the stack.
+-   `push` - add an item onto the top of the stack.
+-   `pop` - remove and return an item from the top of the stack.
 
-## Demo: Write a Demo
+Stack implementations:
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+-   As an [array](http://www.cs.usfca.edu/~galles/visualization/StackArray.html).
+-   As a [list](http://www.cs.usfca.edu/~galles/visualization/StackLL.html).
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+## Discussion: Queue
 
-## Code-Along: Write an Code-Along
+Queue operations:
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+-   `empty?` - check to see if there are any items in the queue.
+-   `enqueue` - add an item to the tail of the queue.
+-   `dequeue` - remove an item from the head of the queue.
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+Queue implementations:
 
-## Lab: Write a Lab
+-   As an [array](http://www.cs.usfca.edu/~galles/visualization/QueueArray.html)
+-   As a [list](http://www.cs.usfca.edu/~galles/visualization/QueueLL.html)
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+## Language details
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+In languages that have a "nothing" type, `nil` in Ruby or `undefined` in
+JavaScript, `empty?` need not be implemented.  Instead, check for that type when
+calling `pop` or `dequeue`.
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+### Lab: List
+
+List operations:
+
+-   empty? -
+-   prepend -
+-   append -
+-   first -
+-   next -
+
+In your squads, discuss implementing a list in an array.  
+
+How would you implement each of the operations?  
+
+What if this theoretical array type only provided index based access to elements
+(i.e. the `[]` operator) and required explicit allocation of space for elements?
+Would this change your implementation significantly?  How would you handle
+adding an item to a "full" array?
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+-   [Data Structure Visulizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html).
 
 ## [License](LICENSE)
 
