@@ -23,7 +23,8 @@ By the end of this, developers should be able to:
 
 ## Preparation
 
-1.  None.
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
 
 ## Abstract data type (ADT)
 
@@ -74,9 +75,9 @@ List operations:
 -   first -
 -   next -
 
-In your squads, discuss implementing a list in an array.  
+In your squads, discuss implementing a list in an array.
 
-How would you implement each of the operations?  
+How would you implement each of the operations?
 
 What if this theoretical array type only provided index based access to elements
 (i.e. the `[]` operator) and required explicit allocation of space for elements?
