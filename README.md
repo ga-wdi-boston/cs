@@ -1,13 +1,13 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Computer Science
+# Computer Science: An introduction
 
 [Computer science](https://en.wikipedia.org/wiki/Computer_science) as an area of
 study comprises everything necessary for the design, construction, and use of
 computers.
 
 We'll focus on one area of theoretical computer science, algorithms and data
-structures, and  begin with abstract data types.
+structures, and begin with abstract data types.
 
 ## Prerequisites
 
@@ -33,51 +33,70 @@ what it does, rather than how it is implemented.  Specific implementations have
 limitations not found in the ADT and must be able to create instances of the
 type.
 
-## Discussion: Stack
+## Stack
+
+A stack implements a last in, first out data store (LIFO).  
+
+### Discussion: Stack
 
 Stack operations:
 
--   `empty?` - check to see if there are any items on the stack.
--   `push` - add an item onto the top of the stack.
--   `pop` - remove and return an item from the top of the stack.
+-   `empty?` - check to see if there are any items on a stack.
+-   `push` - add an item onto the top of a stack.
+-   `pop` - remove and return an item from the top of a stack.
 
-Stack implementations:
+Visualizing stack implementations:
 
 -   As an [array](http://www.cs.usfca.edu/~galles/visualization/StackArray.html).
 -   As a [list](http://www.cs.usfca.edu/~galles/visualization/StackLL.html).
 
-## Discussion: Queue
+### Code along: Implementing a stack in JavaScript
+
+### Lab: Implementing a stack in Ruby
+
+## Queue
+
+A queue implements a first in, first out data store (FIFO).
+
+### Discussion: Queue
 
 Queue operations:
 
--   `empty?` - check to see if there are any items in the queue.
--   `enqueue` - add an item to the tail of the queue.
--   `dequeue` - remove an item from the head of the queue.
+-   `empty?` - check to see if there are any items in a queue.
+-   `enqueue` - add an item to the tail of a queue.
+-   `dequeue` - remove an item from the head of a queue.
 
-Queue implementations:
+Visualizing queue implementations:
 
 -   As an [array](http://www.cs.usfca.edu/~galles/visualization/QueueArray.html)
 -   As a [list](http://www.cs.usfca.edu/~galles/visualization/QueueLL.html)
 
+### Code along: Implementing a queue in JavaScript
+
+### Lab: Implementing a queue in Ruby
+
 ## Language details
 
-In languages that have a "nothing" type, `nil` in Ruby or `undefined` in
-JavaScript, `empty?` need not be implemented.  Instead, check for that type when
-calling `pop` or `dequeue`.
+In languages that have a "nothing" type, `nil` in Ruby, `undefined` in
+JavaScript, or `None` in Python, `empty?` need not be implemented.  Instead,
+check for that type when calling `pop` or `dequeue`.
 
-### Lab: List
+## List
+
+### Discussion: List
 
 List operations:
 
--   empty? -
--   prepend -
--   append -
--   first -
--   next -
+-   `empty?` - check to see if there are any items in a list.
+-   `first` - return the item at the head of a list.
+-   `rest` - return the tail of a list - the list comprised of all elements
+    except the head (the element containing the item returned by first).
+-   `prepend` - create a one element list and add the existing head as its tail.
+-   `delete` - replace a list with `rest`, removing the head.
 
-In your squads, discuss implementing a list in an array.
+### Lab: List
 
-How would you implement each of the operations?
+In your squads, discuss implementing these operations using an array.
 
 What if this theoretical array type only provided index based access to elements
 (i.e. the `[]` operator) and required explicit allocation of space for elements?
@@ -86,7 +105,7 @@ adding an item to a "full" array?
 
 ## Additional Resources
 
--   [Data Structure Visulizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html).
+-   [Data Structure Visualizations](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html).
 
 ## [License](LICENSE)
 
