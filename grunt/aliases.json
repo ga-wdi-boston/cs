@@ -1,0 +1,7 @@
+{
+  "default": ["nag", "test"],
+  "nag": ["jshint", "jsonlint:all", "jscs:status"],
+  "reformat": ["jscs:write"],
+  "server": ["nodemon:server"],
+  "test": ["mochacli:all"]
+}
