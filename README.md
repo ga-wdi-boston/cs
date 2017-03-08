@@ -50,7 +50,9 @@ Visualizing stack implementations:
 -   As an [array](http://www.cs.usfca.edu/~galles/visualization/StackArray.html).
 -   As a [list](http://www.cs.usfca.edu/~galles/visualization/StackLL.html).
 
-### Code along: Implementing a stack in JavaScript
+### Demonstration: Implementing a stack in JavaScript
+
+### Code along: Annotating a stack implementation in JavaScript
 
 ### Lab: Implementing a stack in Ruby
 
@@ -71,9 +73,11 @@ Visualizing queue implementations:
 -   As an [array](http://www.cs.usfca.edu/~galles/visualization/QueueArray.html)
 -   As a [list](http://www.cs.usfca.edu/~galles/visualization/QueueLL.html)
 
-### Code along: Implementing a queue in JavaScript
+### Demonstration: Implementing a queue in Ruby
 
-### Lab: Implementing a queue in Ruby
+### Code along: Annotating a queue implementation in Ruby
+
+### Lab: Implementing a queue in JavaScript
 
 ## Implementation details
 
