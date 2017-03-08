@@ -75,11 +75,13 @@ Visualizing queue implementations:
 
 ### Lab: Implementing a queue in Ruby
 
-## Language details
+## Implementation details
 
-In languages that have a "nothing" type, `nil` in Ruby, `undefined` in
-JavaScript, or `None` in Python, `empty?` need not be implemented.  Instead,
-check for that type when calling `pop` or `dequeue`.
+Do we need `empty?` (or `isEmpty` or `isempty`) when implementing either ADT in
+a language that has a "nothing" type  (`nil` in Ruby, `undefined` in JavaScript,
+or `None` in Python)?  Why or why not?
+
+How should we handle the limitations of concrete implementations of either ADT?
 
 ## List
 
