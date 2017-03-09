@@ -12,7 +12,7 @@ const expect = chai.expect;
 
 const Queue = require('../lib/queue');
 
-describe('Stack', function () {
+describe('Queue', function () {
   describe('a new queue', function () {
     const queue = new Queue();
     it('is empty', function () {
