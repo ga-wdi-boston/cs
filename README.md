@@ -50,7 +50,9 @@ Visualizing stack implementations:
 -   As an [array](http://www.cs.usfca.edu/~galles/visualization/StackArray.html).
 -   As a [list](http://www.cs.usfca.edu/~galles/visualization/StackLL.html).
 
-### Code along: Implementing a stack in JavaScript
+### Demonstration: Implementing a stack in JavaScript
+
+### Code along: Annotating a stack implementation in JavaScript
 
 ### Lab: Implementing a stack in Ruby
 
@@ -71,15 +73,19 @@ Visualizing queue implementations:
 -   As an [array](http://www.cs.usfca.edu/~galles/visualization/QueueArray.html)
 -   As a [list](http://www.cs.usfca.edu/~galles/visualization/QueueLL.html)
 
-### Code along: Implementing a queue in JavaScript
+### Demonstration: Implementing a queue in Ruby
 
-### Lab: Implementing a queue in Ruby
+### Code along: Annotating a queue implementation in Ruby
 
-## Language details
+### Lab: Implementing a queue in JavaScript
 
-In languages that have a "nothing" type, `nil` in Ruby, `undefined` in
-JavaScript, or `None` in Python, `empty?` need not be implemented.  Instead,
-check for that type when calling `pop` or `dequeue`.
+## Implementation details
+
+Do we need `empty?` (or `isEmpty` or `isempty`) when implementing either ADT in
+a language that has a "nothing" type  (`nil` in Ruby, `undefined` in JavaScript,
+or `None` in Python)?  Why or why not?
+
+How should we handle the limitations of concrete implementations of either ADT?
 
 ## List
 
