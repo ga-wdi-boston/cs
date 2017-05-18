@@ -33,4 +33,16 @@ describe('Stack', function () {
       expect(stack.push(2)._store[1]).to.equal(2);
     });
   });
+
+  describe('pop', function() {
+
+    it('pops off an element', function() {
+      stack.pop();
+      expect(stack._store[1]).to.be.undefined;
+    });
+
+    it('remaining element is correct', function() {
+      expect(stack._store[0]).to.equal(1);
+    });
+  });
 });
