@@ -36,7 +36,7 @@ describe('Stack', function () {
 
   describe('pop', function() {
 
-    it('pops off an element', function() {
+    it('removes an element', function() {
       stack.pop();
       expect(stack._store[1]).to.be.undefined;
     });
