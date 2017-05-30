@@ -8,6 +8,9 @@ RSpec.describe Stack do
     it 'is empty' do
       expect(stack.empty?).to eq(true)
     end
+  end
+  context 'when an element is pushed' do
+    stack = Stack.new
     it 'adds an element to the stack' do
       stack.push(1)
       expect(stack.empty?).to eq(false)
