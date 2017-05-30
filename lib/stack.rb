@@ -17,4 +17,8 @@ class Stack
     store.push(value)
     self
   end
+
+  def pop
+    store.pop
+  end
 end
