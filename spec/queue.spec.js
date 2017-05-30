@@ -32,4 +32,15 @@ describe('Queue', function () {
       expect(queue.enqueue(2)._store[1]).to.equal(2);
     });
   });
+
+  describe('dequeue', function () {
+    it('removes an element', function () {
+      queue.dequeue();
+      expect(queue._store[1]).to.be.undefined;
+    });
+
+    it('removes an element from the head of the queue', function() {
+      expect(queue._store[0]).to.equal(2);
+    });
+  });
 });
