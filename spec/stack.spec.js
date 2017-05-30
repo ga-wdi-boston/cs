@@ -41,7 +41,7 @@ describe('Stack', function () {
       expect(stack._store[1]).to.be.undefined;
     });
 
-    it('remaining element is correct', function() {
+    it('removes an element from the top of the stack', function() {
       expect(stack._store[0]).to.equal(1);
     });
   });
