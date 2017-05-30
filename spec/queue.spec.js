@@ -19,4 +19,17 @@ describe('Queue', function () {
       expect(queue.isEmpty).to.be.true;
     });
   });
+
+  const queue = new Queue();
+
+  describe('enqueue', function () {
+    it('adds element to queue', function () {
+      queue.enqueue(1);
+      expect(queue._store[0]).to.equal(1);
+    });
+
+    it('adds element to the tail of the queue', function () {
+      expect(queue.enqueue(2)._store[1]).to.equal(2);
+    });
+  });
 });
