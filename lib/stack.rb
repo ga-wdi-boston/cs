@@ -2,4 +2,19 @@
 
 # A queue class
 class Stack
+  attr_reader :store
+  private :store
+
+  def initialize
+    @store = []
+  end
+
+  def empty?
+    store.empty?
+  end
+
+  def push(value)
+    store.push(value)
+    self
+  end
 end
